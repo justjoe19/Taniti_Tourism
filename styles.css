@@ -1,0 +1,157 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #003366;
+  color: white;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav {
+  position: relative;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Mobile Dropdown Menu */
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: none;
+  color: white;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #003366;
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li {
+    padding: 0.5rem 1rem;
+  }
+}
+
+.hero {
+  background: #e0f7fa;
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero-image {
+  width: 90%;
+  height: 300px;
+  margin: auto;
+  background: #ccc;
+  border: 2px dashed #aaa;
+}
+
+.dots {
+  margin-top: 0.5rem;
+  font-size: 2rem;
+  color: #888;
+}
+
+.grid-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.box {
+  width: 200px;
+  height: 150px;
+  background: #ddd;
+  border: 2px dashed #aaa;
+}
+
+.info-text {
+  padding: 2rem;
+  background: white;
+  max-width: 800px;
+  margin: auto;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.carousel {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.carousel img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border: 2px solid #aaa;
+}
+
+.dots span {
+  cursor: pointer;
+  padding: 0 5px;
+  font-size: 2rem;
+  color: #999;
+}
+
+.dots span:hover {
+  color: #333;
+}

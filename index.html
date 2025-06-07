@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Taniti Tourism</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Taniti Tourism</h1>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <nav>
+        <ul id="nav-menu">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#activities">Activities</a></li>
+          <li><a href="#lodging">Lodging</a></li>
+          <li><a href="#booking">Booking</a></li>
+          <li><a href="#travel-info">Travel Info</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="carousel">
+      <img id="carousel-image" src="carousel1.jpg" alt="carousel image" onclick="nextImage()">
+      <div class="dots">
+        <span onclick="showImage(0)">●</span>
+        <span onclick="showImage(1)">●</span>
+        <span onclick="showImage(2)">●</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="activities" class="grid-section">
+    <h2>Popular Activities</h2>
+    <div class="grid">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </section>
+
+  <section id="lodging" class="grid-section">
+    <h2>Lodging Highlights (Resorts, Hostels, B & B)</h2>
+    <div class="grid">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </section>
+
+  <section id="booking" class="grid-section">
+    <h2>Booking Options (Tours, Lodging, Rentals)</h2>
+    <div class="grid">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </section>
+
+  <section id="travel-info" class="info-text">
+    <h2>Travel Info / Transportation / FAQs</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed congue leo...</p>
+  </section>
+
+  <footer id="footer">
+    <p>Footer (Contact, Social Media, Legal)</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav-menu').classList.toggle('active');
+    }
+
+    const images = [
+      "carousel1.jpg",
+      "carousel2.jpg",
+      "carousel3.jpg"
+    ];
+
+    let currentImage = 0;
+
+    function showImage(index) {
+      currentImage = index;
+      document.getElementById("carousel-image").src = images[currentImage];
+    }
+
+    function nextImage() {
+      currentImage = (currentImage + 1) % images.length;
+      document.getElementById("carousel-image").src = images[currentImage];
+    }
+  </script>
+</body>
+</html>
