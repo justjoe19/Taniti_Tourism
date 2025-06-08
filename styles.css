@@ -109,8 +109,10 @@ nav a {
 .carousel img {
   width: 100%;
   max-width: 800px;
-  max-height: 400px;
+  height: 50vh;
   border: 2px solid #aaa;
+  position: relative;
+  text-align: center;
 }
 
 .dots span {
@@ -169,6 +171,23 @@ nav a {
   background: white;
   max-width: 800px;
   margin: auto;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3vw; 
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  pointer-events: none;
+  white-space: nowrap;
+  max-width: 90%;
+  text-align: center;
 }
 
 /* FOOTER */
