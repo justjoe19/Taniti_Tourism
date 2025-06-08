@@ -27,7 +27,7 @@ header .container {
 }
 
 nav {
-  position: relative;
+  flex-basis: 100%;
 }
 
 nav ul {
@@ -43,7 +43,6 @@ nav a {
   text-decoration: none;
 }
 
-/* Mobile Dropdown Menu */
 .menu-toggle {
   display: none;
   font-size: 1.5rem;
@@ -62,11 +61,7 @@ nav a {
     display: none;
     flex-direction: column;
     background-color: #003366;
-    position: absolute;
-    top: 2.5rem;
-    left: 0;
     width: 100%;
-    z-index: 1000;
   }
 
   nav ul.active {
@@ -82,54 +77,6 @@ nav a {
   background: #e0f7fa;
   padding: 2rem;
   text-align: center;
-}
-
-.hero-image {
-  width: 90%;
-  height: 300px;
-  margin: auto;
-  background: #ccc;
-  border: 2px dashed #aaa;
-}
-
-.dots {
-  margin-top: 0.5rem;
-  font-size: 2rem;
-  color: #888;
-}
-
-.grid-section {
-  padding: 2rem;
-  text-align: center;
-}
-
-.grid {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.box {
-  width: 200px;
-  height: 150px;
-  background: #ddd;
-  border: 2px dashed #aaa;
-}
-
-.info-text {
-  padding: 2rem;
-  background: white;
-  max-width: 800px;
-  margin: auto;
-}
-
-footer {
-  background: #222;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
 }
 
 .carousel {
@@ -154,4 +101,39 @@ footer {
 
 .dots span:hover {
   color: #333;
+}
+
+.grid-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 200px;
+  height: 150px;
+  background: #ddd;
+  border: 2px dashed #aaa;
+}
+
+.info-text {
+  padding: 2rem;
+  background: white;
+  max-width: 800px;
+  margin: auto;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
 }
