@@ -10,18 +10,18 @@
   <header>
     <div class="container">
       <h1>Taniti Tourism</h1>
-      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-      <nav>
-        <ul id="nav-menu">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#activities">Activities</a></li>
-          <li><a href="#lodging">Lodging</a></li>
-          <li><a href="#booking">Booking</a></li>
-          <li><a href="#travel-info">Travel Info</a></li>
-          <li><a href="#footer">Contact</a></li>
-        </ul>
-      </nav>
+      <button class="menu-toggle" id="menu-toggle">☰</button>
     </div>
+    <nav>
+      <ul id="nav-menu">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#activities">Activities</a></li>
+        <li><a href="#lodging">Lodging</a></li>
+        <li><a href="#booking">Booking</a></li>
+        <li><a href="#travel-info">Travel Info</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <section id="hero" class="hero">
@@ -35,53 +35,24 @@
     </div>
   </section>
 
-  <section id="activities" class="grid-section">
-    <h2>Popular Activities</h2>
-    <div class="grid">
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-    </div>
-  </section>
-
-  <section id="lodging" class="grid-section">
-    <h2>Lodging Highlights (Resorts, Hostels, B & B)</h2>
-    <div class="grid">
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-    </div>
-  </section>
-
-  <section id="booking" class="grid-section">
-    <h2>Booking Options (Tours, Lodging, Rentals)</h2>
-    <div class="grid">
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-    </div>
-  </section>
-
-  <section id="travel-info" class="info-text">
-    <h2>Travel Info / Transportation / FAQs</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed congue leo...</p>
-  </section>
+  <!-- Other sections go here -->
 
   <footer id="footer">
     <p>Footer (Contact, Social Media, Legal)</p>
   </footer>
 
   <script>
-    function toggleMenu() {
-      document.getElementById('nav-menu').classList.toggle('active');
-    }
+    // Mobile menu toggle
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggle = document.getElementById("menu-toggle");
+      const menu = document.getElementById("nav-menu");
+      toggle.addEventListener("click", function () {
+        menu.classList.toggle("active");
+      });
+    });
 
-    const images = [
-      "carousel1.jpg",
-      "carousel2.jpg",
-      "carousel3.jpg"
-    ];
-
+    // Carousel logic
+    const images = ["carousel1.jpg", "carousel2.jpg", "carousel3.jpg"];
     let currentImage = 0;
 
     function showImage(index) {
