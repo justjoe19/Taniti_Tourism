@@ -1,198 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Taniti Tourism</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="https://kit.fontawesome.com/c7feced659.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1><a href="#hero">Taniti Tourism</a></h1>
-      <button class="menu-toggle" id="menu-toggle">☰</button>
-      <nav>
-        <ul id="nav-menu">
-          <li><a href="#activities">Activities</a></li>
-          <li><a href="#lodging">Lodging</a></li>
-          <li><a href="#booking">Booking</a></li>
-          <li><a href="#travel-info">Travel Info</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <section id="hero" class="hero">
-    <div class="carousel">
-      <img id="carousel-image" src="images/carousel1.jpg" alt="carousel image" onclick="nextImage()">
-      <div class="overlay-text">Welcome to Taniti</div>
-      <div class="dots">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taniti Tourism</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/c7feced659.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1><a href="#hero">Taniti Tourism</a></h1>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+        <nav>
+          <ul id="nav-menu">
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#lodging">Lodging</a></li>
+            <li><a href="#booking">Booking</a></li>
+            <li><a href="#travel-info">Travel Info</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <section id="activities" class="grid-section">
-    <h2>Popular Activities</h2>
-    <div class="grid">
-      <div class="card">
-        <div class="box"><img src="images/activity1.jpg" alt="surfing"></div>
-        <p class="caption">Surfing in the ocean</p>
+    <section id="hero" class="hero">
+      <div class="carousel">
+        <img
+          id="carousel-image"
+          src="images/carousel1.jpg"
+          alt="carousel image"
+          onclick="nextImage()"
+        />
+        <div class="overlay-text">Welcome to Taniti</div>
+        <div class="dots">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
       </div>
-      <div class="card">
-        <div class="box"><img src="images/activity2.jpg" alt="jet skiing"></div>
-        <p class="caption">Jet skiing</p>
+    </section>
+
+    <section id="activities" class="grid-section">
+      <h2>Popular Activities</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="box">
+            <img src="images/activity1.jpg" alt="surfing" />
+          </div>
+          <p class="caption">Surfing in the ocean</p>
+        </div>
+        <div class="card">
+          <div class="box">
+            <img src="images/activity2.jpg" alt="jet skiing" />
+          </div>
+          <p class="caption">Jet skiing</p>
+        </div>
+        <div class="card">
+          <div class="box"><img src="images/activity3.jpg" alt="hiking" /></div>
+          <p class="caption">Mountain hiking</p>
+        </div>
       </div>
-      <div class="card">
-        <div class="box"><img src="images/activity3.jpg" alt="hiking"></div>
-        <p class="caption">Mountain hiking</p>
+    </section>
+
+    <section id="lodging" class="grid-section">
+      <h2>Lodging Highlights (Resorts, Hostels, B & B)</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="box">
+            <img src="images/lodging1.jpg" alt="room with a view" />
+          </div>
+          <p>A room with a view</p>
+        </div>
+        <div class="card">
+          <div class="box">
+            <img src="images/lodging2.jpg" alt="overhead view of lodging" />
+          </div>
+          <p>Beachfront resorts</p>
+        </div>
+        <div class="card">
+          <div class="box">
+            <img src="images/lodging3.jpg" alt="poolside view" />
+          </div>
+          <p>Poolside fun</p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="lodging" class="grid-section">
-    <h2>Lodging Highlights (Resorts, Hostels, B & B)</h2>
-    <div class="grid">
-      <div class="card">
-        <div class="box"><img src="images/lodging1.jpg" alt="room with a view"></div>
-        <p>A room with a view</p>
+    <section id="booking" class="grid-section">
+      <h2>Booking Options (Tours, Lodging, Rentals)</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="box"><img src="images/travel1.jpg" alt="airport" /></div>
+          <p>Direct flights available</p>
+        </div>
+        <div class="card">
+          <div class="box">
+            <img src="images/travel2.jpg" alt="cruise ship" />
+          </div>
+          <p>Book a cruise excursion</p>
+        </div>
+        <div class="card">
+          <div class="box"><img src="images/travel3.jpg" alt="luggage" /></div>
+          <p>Complete travel packages</p>
+        </div>
       </div>
-      <div class="card">
-        <div class="box"><img src="images/lodging2.jpg" alt="overhead view of lodging"></div>
-        <p>Beachfront resorts</p>
-      </div>
-      <div class="card">
-        <div class="box"><img src="images/lodging3.jpg" alt="poolside view"></div>
-        <p>Poolside fun</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="booking" class="grid-section">
-    <h2>Booking Options (Tours, Lodging, Rentals)</h2>
-    <div class="grid">
-      <div class="card">
-        <div class="box"><img src="images/travel1.jpg" alt="airport"></div>
-        <p>Direct flights available</p>
-      </div>
-      <div class="card">
-        <div class="box"><img src="images/travel2.jpg" alt="cruise ship"></div>
-        <p>Book a cruise excursion</p>
-      </div>
-      <div class="card">
-        <div class="box"><img src="images/travel3.jpg" alt="luggage"></div>
-        <p>Complete travel packages</p>
-      </div>
-    </div>
-  </section>
+    <section id="travel-info" class="info-text">
+      <h2>Travel Info / Transportation / FAQs</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed
+        congue leo. Aliquam erat volutpat. Curabitur sed commodo massa. In
+        tincidunt faucibus felis, a faucibus leo consequat nec. Morbi lacinia
+        nunc et finibus commodo. Donec eget viverra diam, vel rhoncus ligula.
+        Sed eu diam condimentum, condimentum tellus pellentesque, consectetur
+        lectus. Fusce id posuere risus, sed auctor purus. Quisque pretium
+        lacinia ex quis dapibus. Praesent eu semper nibh. Donec eu tortor at
+        nunc placerat feugiat sed tincidunt ipsum. Mauris et vehicula massa.
+        Proin sagittis nibh quis sem auctor ultrices.
+      </p>
+      <p>
+        Nullam metus magna, consequat sed metus ut, venenatis sollicitudin est.
+        Donec erat metus, vehicula dapibus ligula sed, fermentum imperdiet
+        metus. Sed gravida leo a lorem ullamcorper, et pharetra justo facilisis.
+        Integer ac sem id urna varius laoreet. Vivamus nec suscipit tellus.
+        Suspendisse ac pretium lectus. Fusce tempus eros nibh, nec pretium lorem
+        tristique vel. Suspendisse varius luctus maximus. Nam quis leo molestie
+        neque suscipit congue.
+      </p>
+      <p>
+        Ut mollis nulla ut volutpat mollis. Aenean sit amet erat euismod,
+        efficitur dolor a, elementum neque. Sed nec hendrerit dolor. Donec sit
+        amet mi tincidunt lectus bibendum feugiat et molestie lacus. Vivamus
+        volutpat tortor in lacus lacinia, vel iaculis erat tincidunt. Donec nisi
+        lectus, placerat non quam vitae, viverra porttitor purus. Nulla
+        facilisi. Etiam suscipit, urna sit amet luctus eleifend, neque leo
+        fringilla magna, vitae venenatis mauris dui non urna. Nunc odio nisl,
+        imperdiet sit amet magna pretium, eleifend pellentesque est. Interdum et
+        malesuada fames ac ante ipsum primis in faucibus.
+      </p>
+    </section>
 
-  <section id="travel-info" class="info-text">
-    <h2>Travel Info / Transportation / FAQs</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed 
-      congue leo. Aliquam erat volutpat. Curabitur sed commodo massa. In tincidunt 
-      faucibus felis, a faucibus leo consequat nec. Morbi lacinia nunc et finibus 
-      commodo. Donec eget viverra diam, vel rhoncus ligula. Sed eu diam condimentum, 
-      condimentum tellus pellentesque, consectetur lectus. Fusce id posuere risus, 
-      sed auctor purus. Quisque pretium lacinia ex quis dapibus. Praesent eu semper nibh.
+    <footer id="footer">
+      <p>© 2025 Taniti Tourism</p>
+      <p style="text-align: center">
+        <a href="contact.html" title="Contact Us">
+          <i class="fa-solid fa-envelope fa-2xl" style="color: #74c0fc"></i>
+        </a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://facebook.com" target="_blank" title="Facebook">
+          <i class="fa-brands fa-facebook fa-2xl" style="color: #74c0fc"></i>
+        </a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://x.com" target="_blank" title="X">
+          <i class="fa-brands fa-x-twitter fa-xl" style="color: #74c0fc"></i>
+        </a>
+      </p>
+    </footer>
 
-      Donec eu tortor at nunc placerat feugiat sed tincidunt ipsum. Mauris et vehicula massa. 
-      Proin sagittis nibh quis sem auctor ultrices. Nullam metus magna, consequat sed metus 
-      ut, venenatis sollicitudin est. Donec erat metus, vehicula dapibus ligula sed, 
-      fermentum imperdiet metus. Sed gravida leo a lorem ullamcorper, et pharetra justo 
-      facilisis. Integer ac sem id urna varius laoreet. Vivamus nec suscipit tellus. 
-      Suspendisse ac pretium lectus.
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggle = document.getElementById("menu-toggle");
+        const menu = document.getElementById("nav-menu");
+        const navLinks = document.querySelectorAll("#nav-menu a");
 
-      Fusce tempus eros nibh, nec pretium lorem tristique vel. Suspendisse varius luctus maximus. 
-      Nam quis leo molestie neque suscipit congue. Ut mollis nulla ut volutpat mollis. Aenean sit 
-      amet erat euismod, efficitur dolor a, elementum neque. Sed nec hendrerit dolor. Donec sit 
-      amet mi tincidunt lectus bibendum feugiat et molestie lacus. Vivamus volutpat tortor in 
-      lacus lacinia, vel iaculis erat tincidunt. Donec nisi lectus, placerat non quam vitae, 
-      viverra porttitor purus. Nulla facilisi. Etiam suscipit, urna sit amet luctus eleifend, neque 
-      leo fringilla magna, vitae venenatis mauris dui non urna. Nunc odio nisl, imperdiet sit amet 
-      magna pretium, eleifend pellentesque est. Interdum et malesuada fames ac ante ipsum primis 
-      in faucibus.</p>
-  </section>
-
-  <footer id="footer">
-    <p>© 2025 Taniti Tourism</p>
-    <p style="text-align: center;">
-      <a href="contact.html" title="Contact Us"> 
-        <i class="fa-solid fa-envelope fa-2xl" style="color: #74C0FC;"></i>
-      </a>
-      &nbsp;&nbsp;&nbsp;
-      <a href="https://facebook.com" target="_blank" title="Facebook">
-        <i class="fa-brands fa-facebook fa-2xl" style="color: #74C0FC;"></i>
-      </a>
-      &nbsp;&nbsp;&nbsp;
-      <a href="https://x.com" target="_blank" title="X">
-        <i class="fa-brands fa-x-twitter fa-xl" style="color: #74C0FC;"></i>
-      </a>
-    </p>
-  </footer>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const toggle = document.getElementById("menu-toggle");
-      const menu = document.getElementById("nav-menu");
-      const navLinks = document.querySelectorAll("#nav-menu a");
-
-      // Toggle menu open/close
-      toggle.addEventListener("click", function () {
-        menu.classList.toggle("active");
-      });
-
-      // Close menu when a link is clicked on mobile
-      navLinks.forEach(function (link) {
-        link.addEventListener("click", function () {
-          if (window.innerWidth <= 768) {
-            menu.classList.remove("active");
-          }
+        // Toggle menu open/close
+        toggle.addEventListener("click", function () {
+          menu.classList.toggle("active");
         });
-      });
 
-      // Carousel logic
-      const images = [
-        "images/carousel1.jpg",
-        "images/carousel2.jpg",
-        "images/carousel3.jpg"
-      ];
-      let currentImage = 0;
-
-      const carouselImage = document.getElementById("carousel-image");
-      const dots = document.querySelectorAll(".dots .dot");
-
-      function showImage(index) {
-        currentImage = index;
-        carouselImage.src = images[currentImage];
-
-        // Update active dot
-        dots.forEach((dot, i) => {
-          dot.classList.toggle("active", i === currentImage);
+        // Close menu when a link is clicked on mobile
+        navLinks.forEach(function (link) {
+          link.addEventListener("click", function () {
+            if (window.innerWidth <= 768) {
+              menu.classList.remove("active");
+            }
+          });
         });
-      }
 
-      function nextImage() {
-        currentImage = (currentImage + 1) % images.length;
-        showImage(currentImage);
-      }
+        // Carousel logic
+        const images = [
+          "images/carousel1.jpg",
+          "images/carousel2.jpg",
+          "images/carousel3.jpg",
+        ];
+        let currentImage = 0;
 
-      // Start auto-rotation every 5 seconds
-      setInterval(nextImage, 5000);
+        const carouselImage = document.getElementById("carousel-image");
+        const dots = document.querySelectorAll(".dots .dot");
 
-      // Add click event for dots
-      dots.forEach((dot, index) => {
-        dot.addEventListener("click", () => {
-          showImage(index);
+        function showImage(index) {
+          currentImage = index;
+          carouselImage.src = images[currentImage];
+
+          // Update active dot
+          dots.forEach((dot, i) => {
+            dot.classList.toggle("active", i === currentImage);
+          });
+        }
+
+        function nextImage() {
+          currentImage = (currentImage + 1) % images.length;
+          showImage(currentImage);
+        }
+
+        // Start auto-rotation every 5 seconds
+        setInterval(nextImage, 5000);
+
+        // Add click event for dots
+        dots.forEach((dot, index) => {
+          dot.addEventListener("click", () => {
+            showImage(index);
+          });
         });
-      });
 
-      // Initialize first image and dot
-      showImage(0);
-    });
-  </script>
-</body>
+        // Initialize first image and dot
+        showImage(0);
+      });
+    </script>
+  </body>
 </html>

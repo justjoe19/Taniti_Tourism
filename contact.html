@@ -1,82 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Us - Taniti Tourism</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="https://kit.fontawesome.com/c7feced659.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1><a href="index.html#hero">Taniti Tourism</a></h1>
-      <button class="menu-toggle" id="menu-toggle">☰</button>
-      <nav>
-        <ul id="nav-menu">
-          <li><a href="index.html#activities">Activities</a></li>
-          <li><a href="index.html#lodging">Lodging</a></li>
-          <li><a href="index.html#booking">Booking</a></li>
-          <li><a href="index.html#travel-info">Travel Info</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Taniti Tourism</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/c7feced659.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1><a href="index.html#hero">Taniti Tourism</a></h1>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+        <nav>
+          <ul id="nav-menu">
+            <li><a href="index.html#activities">Activities</a></li>
+            <li><a href="index.html#lodging">Lodging</a></li>
+            <li><a href="index.html#booking">Booking</a></li>
+            <li><a href="index.html#travel-info">Travel Info</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  <main class="info-text" style="padding: 2rem;">
-    <h2>Contact Us</h2>
-    <p>If you have any questions about visiting Taniti or would like help booking your trip, please feel free to contact us.</p>
-    
-    <form action="#" method="post" class="contact-form">
-      <label for="name">Name:</label><br />
-      <input type="text" id="name" name="name" required /><br /><br />
-      
-      <label for="email">Email:</label><br />
-      <input type="email" id="email" name="email" required /><br /><br />
-      
-      <label for="message">Message:</label><br />
-      <textarea id="message" name="message" rows="5" required></textarea><br /><br />
-      
-      <button type="submit">Send Message</button>
-    </form>
-  </main>
+    <main class="info-text" style="padding: 2rem">
+      <h2>Contact Us</h2>
+      <p>
+        If you have any questions about visiting Taniti or would like help
+        booking your trip, please feel free to contact us.
+      </p>
 
-  <footer id="footer">
-    <p>© 2025 Taniti Tourism</p>
-    <p style="text-align: center;">
-      <a href="contact.html" title="Contact Us"> 
-        <i class="fa-solid fa-envelope fa-2xl" style="color: #74C0FC;"></i>
-      </a>
-      &nbsp;&nbsp;&nbsp;
-      <a href="https://facebook.com" target="_blank" title="Facebook">
-        <i class="fa-brands fa-facebook fa-2xl" style="color: #74C0FC;"></i>
-      </a>
-      &nbsp;&nbsp;&nbsp;
-      <a href="https://x.com" target="_blank" title="X">
-        <i class="fa-brands fa-x-twitter fa-xl" style="color: #74C0FC;"></i>
-      </a>
-    </p>
-  </footer>
+      <form action="#" method="post" class="contact-form">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const toggle = document.getElementById("menu-toggle");
-      const menu = document.getElementById("nav-menu");
-      const navLinks = document.querySelectorAll("#nav-menu a");
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
 
-      toggle.addEventListener("click", function () {
-        menu.classList.toggle("active");
-      });
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea
+        ><br /><br />
 
-      navLinks.forEach(function (link) {
-        link.addEventListener("click", function () {
-          if (window.innerWidth <= 768) {
-            menu.classList.remove("active");
-          }
+        <button type="submit">Send Message</button>
+      </form>
+    </main>
+
+    <footer id="footer">
+      <p>© 2025 Taniti Tourism</p>
+      <p style="text-align: center">
+        <a href="contact.html" title="Contact Us">
+          <i class="fa-solid fa-envelope fa-2xl" style="color: #74c0fc"></i>
+        </a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://facebook.com" target="_blank" title="Facebook">
+          <i class="fa-brands fa-facebook fa-2xl" style="color: #74c0fc"></i>
+        </a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://x.com" target="_blank" title="X">
+          <i class="fa-brands fa-x-twitter fa-xl" style="color: #74c0fc"></i>
+        </a>
+      </p>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggle = document.getElementById("menu-toggle");
+        const menu = document.getElementById("nav-menu");
+        const navLinks = document.querySelectorAll("#nav-menu a");
+
+        toggle.addEventListener("click", function () {
+          menu.classList.toggle("active");
+        });
+
+        navLinks.forEach(function (link) {
+          link.addEventListener("click", function () {
+            if (window.innerWidth <= 768) {
+              menu.classList.remove("active");
+            }
+          });
         });
       });
-    });
-  </script>
-</body>
+    </script>
+  </body>
 </html>

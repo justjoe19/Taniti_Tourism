@@ -1,7 +1,9 @@
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 100px; /* prevents nav covering sections on scroll */
-  height: 100%; /* ensures footer positioning works */
+  scroll-padding-top: 100px;
+  /* prevents nav covering sections on scroll */
+  height: 100%;
+  /* ensures footer positioning works */
 }
 
 body {
@@ -9,7 +11,8 @@ body {
   font-family: Arial, sans-serif;
   background: #f4f4f4;
   color: #333;
-  min-height: 100vh; /* full height for sticky footer */
+  min-height: 100vh;
+  /* full height for sticky footer */
   display: flex;
   flex-direction: column;
 }
@@ -142,7 +145,8 @@ nav a {
 }
 
 .dots .dot.active {
-  background-color: #333; /* active dot */
+  background-color: #333;
+  /* active dot */
 }
 
 .dots .dot:hover {
@@ -155,7 +159,8 @@ nav a {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: clamp(1.5rem, 3vw, 2.5rem); /* scales responsively */
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  /* scales responsively */
   font-weight: bold;
   background-color: rgba(0, 0, 0, 0.4);
   padding: 0.5rem 1rem;
@@ -185,7 +190,7 @@ nav a {
   overflow: hidden;
   border: 2px solid #ccc;
   border-radius: 5px;
-  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .box img {
